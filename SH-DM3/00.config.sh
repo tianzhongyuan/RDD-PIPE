@@ -23,11 +23,10 @@ echo "#!/bin/bash" > $FC
 echo "LIB="${LIB} >>  $FC
 echo "NTHREAD=14" >>  $FC
 echo "datadir="${datadir} >>  $FC
-echo "mainprog=/mnt/hgfs/chiapipe_simon/softwares/cpu" >>  $FC
-echo "fasta=/mnt/hgfs/chiapipe_simon/ref_genome/dm3/dm3.fa" >>  $FC
+echo "mainprog=/home/claw3dg/3DgenomeClaw/tools/ChIA-PIPE/util/cpu-dir/cpu" >>  $FC
+echo "fasta=/home/claw3dg/3DgenomeClaw/tools/genomes/dm3/dm3.fa" >>  $FC
 echo "genome=/mnt/hgfs/chiapipe_simon/ref_genome/genome_size/dm3.size.txt" >>  $FC
 echo "selfbp=3000" >>  $FC #self ligation in bp
-#echo "selfbp=8000" >>  $FC #self ligation in bp
 echo "mapquality=30" >>  $FC #mapping quality cutoff
 echo "extbp=500" >>  $FC #extension size from each ends in clustering PETs
 
