@@ -117,7 +117,8 @@ extbp=500
 read -r -p "default tag-extention== ${extbp}, if not please enter: " TAGE
 TAGE="${TAGE:-${extbp}}"
 echo_yellow "extbp=$TAGE"
-
+echo_yellow "java=/home/claw3dg/micromamba/envs/3DgenomeClaw/bin/java"
+echo_yellow "pigz=/home/claw3dg/micromamba/envs/3DgenomeClaw/bin/pigz"
 
 ls -l ${PWD}/$FC
 cat $FC
