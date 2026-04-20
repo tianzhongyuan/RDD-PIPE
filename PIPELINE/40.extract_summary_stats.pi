@@ -95,7 +95,7 @@ then
 else
     if [ ${input_control} == "none" ]
     then
-        n_peak=$( cat ${run}.no_input_all_peaks.narrowPeak | wc -l )
+        n_peak=$( cat ${run}.peaks.narrowPeak | wc -l )
     else
         n_peak=$( cat ${run}.all_peaks.narrowPeak | wc -l )
     fi
