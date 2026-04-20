@@ -24,7 +24,8 @@ bamCoverage -bs 1 -of bedgraph -b ${LIB}.for.BROWSER.bam -o ${LIB}.for.BROWSER.b
 
 
 macs2 callpeak --keep-dup all --nomodel -t ${LIB}.for.BROWSER.bam -f BAM -g ${species} -n ${LIB}
-wait
+# wait
+# :wq
 cat ${LIB}.no_input_all_peaks.xls|grep -Ev "^$|[#;]" > ${LIB}.peak
 
 echo "$0 done" > call_peaks.done 
